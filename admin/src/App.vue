@@ -1,10 +1,17 @@
 <template>
-    <h2>大家好</h2>
-     <el-date-picker-panel v-model="value" />
+  <div class="common-layout">
+    <el-container>
+      <el-aside width="200px">Aside</el-aside>
+      <el-container>
+        <el-header>Header</el-header>
+        <el-main>Main</el-main>
+      </el-container>
+    </el-container>
+  </div>
 </template>
 
-<script setup>
 
+<script>
 </script>
 
 <style lang="less" scoped>
