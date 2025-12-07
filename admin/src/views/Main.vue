@@ -1,15 +1,26 @@
 <template>
-   <div>不好</div>
+  <div class="common-layout">
+    <el-container>
+      <!-- <el-aside width="200px">Aside</el-aside> -->
+       <Aside />
+      <el-container>
+        <el-header>Header</el-header>
+        <el-main>Main</el-main>
+      </el-container>
+    </el-container>
+  </div>
 </template>
 
-<script setup>
 
+<script setup>
+import Aside from '../components/aside.vue'
 </script>
 
 <style lang="less" scoped>
-div{
-    background-color: red;
-    width: 200px;
-    height: 200px;
+.common-layout{
+    height: 100%;
+    .el-container{
+        height: 100%;
+    }
 }
 </style>

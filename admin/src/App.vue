@@ -1,19 +1,10 @@
 <template>
-  <div class="common-layout">
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container>
-  </div>
+    <Main />
 </template>
 
-
-<script>
+<script setup>
+import Main from './views/Main.vue'
 </script>
 
 <style lang="less" scoped>
-
 </style>
