@@ -10,12 +10,18 @@
       >
         <p class="logo-lg">陪诊服务后台</p>
         <!-- 菜单组件 -->
-        <tree-menu></tree-menu>
+        <tree-menu :index="1" :menuData="menuData"></tree-menu>
       </el-menu>
 </template>
 
 <script setup>
 import TreeMenu from './TreeMenu.vue'
+import { useRouter } from 'vue-router'
+import { reactive } from 'vue'
+
+const router =  useRouter()
+const menuData =  reactive(router.options.routes[0].children)
+
 const handleOpen = () => {}
 const handleClose = () => {}
 </script>
